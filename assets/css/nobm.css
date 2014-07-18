@@ -259,10 +259,14 @@ section {
   margin-bottom: 2em;
   padding: 0;
 }
-.start-block-article h2 {
+.start-block-article h1 {
   margin-top: 25px;
   margin-bottom: 35px;
-  font-size: 40px;
+  font-size: 25pt;
+}
+.start-block-article h1 small {
+  font-size: 14pt;
+  color: #666;
 }
 .title-code-block {
   height: 28px;
