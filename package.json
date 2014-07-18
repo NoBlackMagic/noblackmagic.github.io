@@ -1,0 +1,35 @@
+{
+  "name": "noblackmagic.github.com",
+  "version": "0.0.0",
+  "description": "noBlackMagic Website",
+  "main": "Gruntfile.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/noblackmagic/noblackmagic.github.com.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Marco Pegoraro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NoBlackMagic/noblackmagic.github.io/issues"
+  },
+  "homepage": "https://noblackmagic.com",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-less": "^0.11.3",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-banner": "^0.2.3"
+  }
+}
