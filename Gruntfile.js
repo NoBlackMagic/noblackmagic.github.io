@@ -27,7 +27,7 @@ module.exports = function (grunt) {
             build: {
                 options: {
                     sourceMap: true,
-                    sourceMapFilename: 'build/jquery.jsbox.css.map',
+                    sourceMapFilename: 'assets/jquery.jsbox.css.map',
                     sourceMapRootpath: '../'
                 },
                 files: {
