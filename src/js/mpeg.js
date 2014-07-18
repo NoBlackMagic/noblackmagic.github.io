@@ -5,7 +5,7 @@
                     '<h3>Marco Pegoraro <small>Lead Front End Dev</small></h3>' +
                     '<ul class="clearfix">' +
                         '<li>' +
-                            '<img src="//assets/images/marco-pegoraro.jpg" alt="Marco Pegoraro" width="80" class="frame left" />' +
+                            '<img src="http://noblackmagic.com/assets/images/marco-pegoraro.jpg" alt="Marco Pegoraro" width="80" class="frame left" />' +
                             '<p style="padding-top:20px">' +
                                 'I play with Javascript, HTML5, mobile web apps, NodeJS, airplanes.' +
                             '</p>' +
