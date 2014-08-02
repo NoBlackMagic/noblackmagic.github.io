@@ -1,4 +1,4 @@
-/* NoBlackMagic.com v0.0.0 | by Marco Pegoraro | https://github.com/NoBlackMagic/noblackmagic.github.io */
+/* NoBlackMagic.com v0.0.1 | by Marco Pegoraro | https://github.com/NoBlackMagic/noblackmagic.github.io */
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 body {
   padding: 50px;
@@ -122,7 +122,7 @@ strong {
   color: #222;
   font-weight: 700;
 }
-section {
+article {
   width: 500px;
   float: right;
   padding-bottom: 50px;
@@ -156,12 +156,8 @@ footer {
     position: static;
     width: auto;
   }
-  header {
-    padding-right: 320px;
-  }
-  section {
-    border: 1px solid #e5e5e5;
-    border-width: 1px 0;
+  article {
+    width: 100%;
     padding: 20px 0;
     margin: 0 0 20px;
   }
@@ -304,4 +300,22 @@ p.code-block {
 }
 iframe {
   height: 350px;
+}
+/**
+ * Mailchimp fixes
+ */
+#mc_embed_signup {
+  background: #fff !important;
+  clear: left !important;
+  font: 14px Helvetica, Arial, sans-serif !important;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0 5px 0 !important;
+}
+#mc_embed_signup input.email {
+  display: inline-block !important;
+}
+#mc_embed_signup input.button {
+  display: inline-block !important;
+  clear: none !important;
 }

@@ -27,8 +27,9 @@ module.exports = function (grunt) {
             build: {
                 options: {
                     sourceMap: true,
-                    sourceMapFilename: 'assets/jquery.jsbox.css.map',
-                    sourceMapRootpath: '../'
+                    sourceMapFilename: 'assets/css/nomb.min.css.map',
+                    sourceMapURL: './nomb.min.css.map',
+                    outputSourceFiles: true
                 },
                 files: {
                     'assets/css/nobm.min.css' : 'src/less/nobm.less'

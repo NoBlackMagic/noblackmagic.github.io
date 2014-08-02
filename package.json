@@ -1,6 +1,6 @@
 {
   "name": "noblackmagic.github.com",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "noBlackMagic Website",
   "main": "Gruntfile.js",
   "directories": {
