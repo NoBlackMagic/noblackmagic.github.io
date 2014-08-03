@@ -9,6 +9,7 @@
                             'JS is the guy who can <strong>bring life to a web page</strong>.<br>' +
                             '<i>- he makes things happen</i>' +
                         '</p>' +
+                        '<span class="clearfix"></span>' +
                     '</div>' +
                 '</aside>';
     
