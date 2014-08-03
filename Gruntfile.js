@@ -62,7 +62,9 @@ module.exports = function (grunt) {
                     sourceMapFilename: 'nobm.js.map'
                 },
                 files: {
-                    'assets/js/mpeg.min.js' : ['src/js/mpeg.js']
+                    'assets/js/mpeg.min.js' : ['src/js/mpeg.js'],
+                    'assets/js/mchimp.min.js' : ['src/js/mchimp.js'],
+                    'assets/js/nobm.min.js' : ['src/js/nobm.js']
                 }
             },
             release: {
@@ -73,12 +75,16 @@ module.exports = function (grunt) {
                     preserveComments: true
                 },
                 files: {
-                    'assets/js/mpeg.js' : ['src/js/mpeg.js']
+                    'assets/js/mpeg.js' : ['src/js/mpeg.js'],
+                    'assets/js/mchimp.js' : ['src/js/mchimp.js'],
+                    'assets/js/nobm.js' : ['src/js/nobm.js']
                 }
             },
             releasemin: {
                 files: {
-                    'assets/js/mpeg.min.js' : ['src/js/mpeg.js']
+                    'assets/js/mpeg.min.js' : ['src/js/mpeg.js'],
+                    'assets/js/mchimp.min.js' : ['src/js/mchimp.js'],
+                    'assets/js/nobm.min.js' : ['src/js/nobm.js']
                 }
             }
         },
