@@ -65,7 +65,9 @@ module.exports = function (grunt) {
                     'assets/js/mpeg.min.js' : ['src/js/mpeg.js'],
                     'assets/js/mchimp.min.js' : ['src/js/mchimp.js'],
                     'assets/js/nobm.min.js' : ['src/js/nobm.js'],
-                    'assets/js/js-spells.min.js' : ['src/js/js-spells.js']
+                    'assets/js/js-spells.min.js' : ['src/js/js-spells.js'],
+                    'assets/js/ga.min.js' : ['src/js/ga.js'],
+                    'assets/js/qs.min.js' : ['src/js/qs.js']
                 }
             },
             release: {
@@ -79,7 +81,9 @@ module.exports = function (grunt) {
                     'assets/js/mpeg.js' : ['src/js/mpeg.js'],
                     'assets/js/mchimp.js' : ['src/js/mchimp.js'],
                     'assets/js/nobm.js' : ['src/js/nobm.js'],
-                    'assets/js/js-spells.js' : ['src/js/js-spells.js']
+                    'assets/js/js-spells.js' : ['src/js/js-spells.js'],
+                    'assets/js/ga.js' : ['src/js/ga.js'],
+                    'assets/js/qs.js' : ['src/js/qs.js']
                 }
             },
             releasemin: {
@@ -87,7 +91,9 @@ module.exports = function (grunt) {
                     'assets/js/mpeg.min.js' : ['src/js/mpeg.js'],
                     'assets/js/mchimp.min.js' : ['src/js/mchimp.js'],
                     'assets/js/nobm.min.js' : ['src/js/nobm.js'],
-                    'assets/js/js-spells.min.js' : ['src/js/js-spells.js']
+                    'assets/js/js-spells.min.js' : ['src/js/js-spells.js'],
+                    'assets/js/ga.min.js' : ['src/js/ga.js'],
+                    'assets/js/qs.min.js' : ['src/js/qs.js']
                 }
             }
         },

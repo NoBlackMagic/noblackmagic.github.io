@@ -1,22 +1,9 @@
 
 (function(){
     
-    // script's querystring to config
-    var q = {};
-    var s = document.getElementsByTagName('script');
-    s[s.length-1].src.replace(/^[^\?]+\??/,'').split('&').forEach(function(part) {
-        part = part.split('=');
-        if (part.length === 2) {
-            q[part[0]] = decodeURIComponent(part[1]);
-        } else {
-            q[part[0]] = '';
-        }
-    });
+    var style = qs({style:''}).style;
     
-    // defaults
-    q.style = q.style || '';
-    
-    var html =  '<div id="mc_embed_signup" style="' + q.style + '">' +
+    var html =  '<div id="mc_embed_signup" style="' + style + '">' +
                     '<form action="http://noblackmagic.us1.list-manage.com/subscribe/post?u=c0e8c260bf69b2d7c5238d3b0&amp;id=cd2f53a5ca" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>' +
                         '<label for="mce-EMAIL">Keep in touch with us!</label>' +
                         '<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>' +
