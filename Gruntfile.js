@@ -67,7 +67,9 @@ module.exports = function (grunt) {
                     'assets/js/nobm.min.js' : ['src/js/nobm.js'],
                     'assets/js/js-spells.min.js' : ['src/js/js-spells.js'],
                     'assets/js/ga.min.js' : ['src/js/ga.js'],
-                    'assets/js/qs.min.js' : ['src/js/qs.js']
+                    'assets/js/qs.min.js' : ['src/js/qs.js'],
+                    'assets/js/fb-sdk.min.js' : ['src/js/fb-sdk.js'],
+                    'assets/js/fb-comments.min.js' : ['src/js/fb-comments.js']
                 }
             },
             release: {
@@ -83,7 +85,9 @@ module.exports = function (grunt) {
                     'assets/js/nobm.js' : ['src/js/nobm.js'],
                     'assets/js/js-spells.js' : ['src/js/js-spells.js'],
                     'assets/js/ga.js' : ['src/js/ga.js'],
-                    'assets/js/qs.js' : ['src/js/qs.js']
+                    'assets/js/qs.js' : ['src/js/qs.js'],
+                    'assets/js/fb-sdk.js' : ['src/js/fb-sdk.js'],
+                    'assets/js/fb-comments.js' : ['src/js/fb-comments.js']
                 }
             },
             releasemin: {
@@ -93,7 +97,9 @@ module.exports = function (grunt) {
                     'assets/js/nobm.min.js' : ['src/js/nobm.js'],
                     'assets/js/js-spells.min.js' : ['src/js/js-spells.js'],
                     'assets/js/ga.min.js' : ['src/js/ga.js'],
-                    'assets/js/qs.min.js' : ['src/js/qs.js']
+                    'assets/js/qs.min.js' : ['src/js/qs.js'],
+                    'assets/js/fb-sdk.min.js' : ['src/js/fb-sdk.js'],
+                    'assets/js/fb-comments.min.js' : ['src/js/fb-comments.js']
                 }
             }
         },
