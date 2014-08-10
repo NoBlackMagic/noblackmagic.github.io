@@ -69,7 +69,9 @@ module.exports = function (grunt) {
                     'assets/js/ga.min.js' : ['src/js/ga.js'],
                     'assets/js/qs.min.js' : ['src/js/qs.js'],
                     'assets/js/fb-sdk.min.js' : ['src/js/fb-sdk.js'],
-                    'assets/js/fb-comments.min.js' : ['src/js/fb-comments.js']
+                    'assets/js/fb-comments.min.js' : ['src/js/fb-comments.js'],
+                    'assets/js/disqus.min.js' : ['src/js/disqus.js'],
+                    'assets/js/include.min.js' : ['src/js/include.js']
                 }
             },
             release: {
@@ -87,7 +89,9 @@ module.exports = function (grunt) {
                     'assets/js/ga.js' : ['src/js/ga.js'],
                     'assets/js/qs.js' : ['src/js/qs.js'],
                     'assets/js/fb-sdk.js' : ['src/js/fb-sdk.js'],
-                    'assets/js/fb-comments.js' : ['src/js/fb-comments.js']
+                    'assets/js/fb-comments.js' : ['src/js/fb-comments.js'],
+                    'assets/js/disqus.js' : ['src/js/disqus.js'],
+                    'assets/js/include.js' : ['src/js/include.js']
                 }
             },
             releasemin: {
@@ -99,7 +103,9 @@ module.exports = function (grunt) {
                     'assets/js/ga.min.js' : ['src/js/ga.js'],
                     'assets/js/qs.min.js' : ['src/js/qs.js'],
                     'assets/js/fb-sdk.min.js' : ['src/js/fb-sdk.js'],
-                    'assets/js/fb-comments.min.js' : ['src/js/fb-comments.js']
+                    'assets/js/fb-comments.min.js' : ['src/js/fb-comments.js'],
+                    'assets/js/disqus.min.js' : ['src/js/disqus.js'],
+                    'assets/js/include.min.js' : ['src/js/include.js'],
                 }
             }
         },
