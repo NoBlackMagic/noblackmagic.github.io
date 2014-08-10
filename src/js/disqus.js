@@ -24,7 +24,7 @@
         
         options.title = options.title || document.title + ' (' + options.thread + ')';
         options.id = options.id || 'disqus-' + options.thread.replace(/\//g, '_');
-        options.url = options.url || document.location.href.split('#')[0] + options.id;
+        options.url = options.url || document.location.href.split('#')[0] + '#' + options.id;
         
         document.write(
             '<iframe ' +

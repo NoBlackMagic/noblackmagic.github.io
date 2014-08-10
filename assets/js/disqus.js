@@ -18,7 +18,7 @@
     if (options.blog && options.thread) {
         options.title = options.title || document.title + " (" + options.thread + ")";
         options.id = options.id || "disqus-" + options.thread.replace(/\//g, "_");
-        options.url = options.url || document.location.href.split("#")[0] + options.id;
+        options.url = options.url || document.location.href.split("#")[0] + "#" + options.id;
         document.write("<iframe " + 'src="' + options.url + '" ' + 'id="' + options.id + '" ' + 'class="' + options.class + '" ' + 'style="' + options.style + '" ' + "></iframe>");
         var iframe = document.getElementsByTagName("iframe");
         iframe = iframe[iframe.length - 1];
