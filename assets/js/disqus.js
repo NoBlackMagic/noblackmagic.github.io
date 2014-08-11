@@ -13,7 +13,9 @@
         // iframe config
         id: "",
         "class": "jsbox-disqus",
-        style: ""
+        style: "",
+        // force to display it even if off-line
+        force: false
     });
     if (options.blog && options.thread) {
         options.title = options.title || document.title + " (" + options.thread + ")";
@@ -26,7 +28,7 @@
         scope.disqusResize = function(w, h) {
             iframe.style.height = h + h / 100 * 5 + "px";
         };
-        if (options.url.indexOf("localhost") !== -1) {
+        if (!options.force && options.url.indexOf("localhost") !== -1) {
             scope.document.open();
             scope.document.write("<style>" + "html, body {background:#fafafa}" + "#disqus_thread {display:block;text-align:center;line-height:50px;font-family:sans-serif;text-shadow: 0 1px #fff;font-size:9pt}" + "</style>" + '<div id="disqus_thread">DISQUS is disabled while in localhost!</div>' + "<script>" + 'var d = document.getElementById("disqus_thread");' + "setInterval(function() {" + "window.disqusResize(d.offsetWidth, d.offsetHeight);" + "}, 500);" + "</script>");
             scope.document.close();

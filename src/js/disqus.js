@@ -16,7 +16,10 @@
         // iframe config
         id: '',
         class: 'jsbox-disqus',
-        style: ''
+        style: '',
+        
+        // force to display it even if off-line
+        force: false
     });
     
     
@@ -43,7 +46,7 @@
             iframe.style.height = (h + h / 100 * 5) + 'px';
         };
         
-        if (options.url.indexOf('localhost') !== -1) {
+        if (!options.force && options.url.indexOf('localhost') !== -1) {
             scope.document.open();
             scope.document.write(
                 '<style>' +
