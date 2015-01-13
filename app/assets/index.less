@@ -1,23 +1,19 @@
-@import "less/styles.less";
-@import "less/page-style.less";
-
-
 /**
- * Mailchimp fixes
+ * noBlackMagic.com - Mobile First Layout
+ * @author: Marco Pegoraro
  */
-#mc_embed_signup {
-    background: #fff !important;
-    clear: left !important;
-    font: 14px Helvetica, Arial, sans-serif !important;
-    
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0 5px 0 !important;
+
+@import "less/lesshat.less";
+@import "less/config.less";
+
+@import "less/font-lato.embed.less";
+
+@import "less/mobile.less";
+
+@media screen and (min-width: 720px) {
+	@import "less/tablet.less";
 }
-#mc_embed_signup input.email {
-    display: inline-block !important;
-}
-#mc_embed_signup input.button {
-    display: inline-block !important;
-    clear: none !important;
+
+@media screen and (min-width: 1024px) {
+	@import "less/desktop.less";
 }
