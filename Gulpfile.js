@@ -48,8 +48,9 @@ gulp.task('copy-cname', function () {
     ;
 });
 
-// Development API
 
+
+// Development API
 gulp.task('default', ['show'], function() {});
 
 gulp.task('show', ['build'], function(done) {
@@ -86,8 +87,8 @@ gulp.task('build', ['wks-jshint'], function(done) {
 
 gulp.task('watch', function() {
     gulp.watch([
-        appPath + '/*.html'
-    ], ['wkd-build-html']);
+        appPath + '/**/*.html'
+    ], ['build']);
     gulp.watch([
         appPath + '/**/*.js',
         appPath + '/**/*.html',
