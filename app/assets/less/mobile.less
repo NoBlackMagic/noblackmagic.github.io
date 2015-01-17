@@ -123,6 +123,10 @@ blockquote {
 	border-left: 5px solid @borderColor;
 	font-style: italic;
 	font-size: 0.9em;
+
+	& p:last-child {
+		margin-bottom:0;
+	}
 }
 
 section {
@@ -311,8 +315,10 @@ section {
 	margin: @verticalMargin auto;
 
 	ul {
+		margin: 0;
 		list-style: none;
 		list-style-type: inside;
+		text-align: center;
 	}
 
 	li {
@@ -369,6 +375,11 @@ section {
 
 	&:after {
 		.after;
+		margin-top: 4em;
+
+		.article-list & {
+			display:none;		
+		}
 	}
 
 	header {
@@ -394,6 +405,10 @@ section {
 			width: 55px;
 			margin: @verticalMargin auto;
 			border-bottom: 1px solid @innerColor;
+
+			.article-list & {
+				display:none;
+			}
 		}
 	}
 
@@ -401,6 +416,10 @@ section {
 		text-align: center;
 		margin-top: 0 - (@verticalMargin / 2);
 		margin-bottom: @verticalMargin;
+
+		.article-list & {
+			margin-top: @verticalMargin / 2;
+		}
 	}
 }
 
