@@ -402,6 +402,9 @@ section {
 .article-item header {
   text-align: center;
 }
+.article-item header a {
+  background: none;
+}
 .article-item header h1 {
   margin-bottom: 0.5em;
   line-height: 1em;
@@ -489,7 +492,7 @@ section {
     left: 0;
     display: block;
     width: 100%;
-    height: 170px;
+    height: 100px;
     padding: 0;
     margin: 0;
     background: none;
