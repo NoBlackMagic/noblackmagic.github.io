@@ -1,14 +1,13 @@
-<article class="article-item">
-	<header>
-		<h1>
-			Beware the Big What The Fuck<br>
-			<small>a strategy to fight the big <em>WTF</em> that is always lurking</small>
-		</h1>
-		<h2>
-			<small>16 Gen 2015<br>by</small> Marco Pegoraro
-		</h2>
-	</header>
-	<footer>
-		<a href="/articles/beware-the-big-what-the-fuck.html" title="beware the big what the fuck" class="read-more">read more</a>
-	</footer>
-</article>
+<%
+var article = {
+	title: 'Beware the Big What The Fuck',
+	subtitle: 'a strategy to fight the big <em>WTF</em> that is always lurking',
+	author: 'Marco Pegoraro',
+	date: '16 Jan 2015',
+	url: 'beware-the-big-what-the-fuck',
+	metaTitle: 'beware the big what the fuck'
+};
+
+/* do not modify below this comment */
+var params = 'article:\'' + new Buffer(JSON.stringify(article)).toString('base64') + '\'';
+%><link rel="import-html" href="../article-item.inc.html" params="<%= params %>">

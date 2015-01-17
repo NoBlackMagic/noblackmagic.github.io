@@ -1,14 +1,13 @@
-<article class="article-item">
-	<header>
-		<h1>
-			The Curse of the Proud Developer<br>
-            <small>how bugs lead to team building</small>
-        </h1>
-		<h2>
-			<small>13 Gen 2015<br>by</small> Marco Pegoraro
-		</h2>
-	</header>
-	<footer>
-		<a href="/articles/the-course-of-the-proud-developer.html" class="read-more" title="the course of the proud developer - how bugs lead to team building">read more</a>
-	</footer>
-</article>
+<%
+var article = {
+	title: 'The Curse of the Proud Developer',
+	subtitle: 'how bugs lead to team building',
+	author: 'Marco Pegoraro',
+	date: '13 Jan 2015',
+	url: 'the-course-of-the-proud-developer',
+	metaTitle: 'the course of the proud developer - how bugs lead to team building'
+};
+
+/* do not modify below this comment */
+var params = 'article:\'' + new Buffer(JSON.stringify(article)).toString('base64') + '\'';
+%><link rel="import-html" href="../article-item.inc.html" params="<%= params %>">

@@ -1,16 +1,34 @@
+<%
+/*
+ARTICLE ITEM TEMPLATE
+receives the article's details as params.article encoded in JSON+BASE64
+
+var article = {
+	title: '',
+	subtitle: '',
+	author: '',
+	date: '',
+	url: '',
+	metaTitle: ''
+};
+*/
+
+var article = JSON.parse(new Buffer(this.params.article, 'base64').toString('ascii'));
+%>
+
 <article class="article-item">
 	<header>
-		<h1>This Is My Title</h1>
-		<h2>
-			<small>22 Dec 2014<br>by</small> Marco Pegoraro
-		</h2>
+		<a href="/articles/<%= article.url %>.html" title="<%= article.metaTitle %>">
+			<h1>
+				<%= article.title %><br>
+	            <small><%= article.subtitle %></small>
+	        </h1>
+			<h2>
+				<small><%= article.date %><br>by</small> <%= article.author %>
+			</h2>
+		</a>
 	</header>
-	<!-- Markdown -->
-	Chapter too parties its letters nor. _Cheerful but whatever_ ladyship disposed yet judgment. Lasted answer oppose to ye months no esteem. Branched is on an ecstatic directly it.
-	<!-- /Markdown -->
-	
 	<footer>
-		<a href="#1" class="read-more">read more</a>
+		<a href="/articles/<%= article.url %>.html" class="read-more" title="<%= article.metaTitle %>">read more</a>
 	</footer>
-
 </article>
