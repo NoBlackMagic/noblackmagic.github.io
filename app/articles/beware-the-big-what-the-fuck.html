@@ -1,10 +1,14 @@
+<%
+var article = this.require('./app/articles/beware-the-big-what-the-fuck.json');
+%>
+
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
 
-    <title>Beware the Big What The Fuck | noBlackMagic.com</title>
-    <meta name="description" content="A strategy to fight the big _WTF_ that is always lurking - Some advices for a better life and more efficient code experience.">
+    <title><%= article.title %> | noBlackMagic.com</title>
+    <meta name="description" content="<%= article.metaDescription %>">
     
     <link _id="wks-css" rel="stylesheet" href="/assets/index.css" />
     <link rel="import-html" href="../assets/includes/meta.inc.html">
@@ -23,9 +27,9 @@
             <article class="article-item">
                 
                 <header>
-                    <h1>Beware the Big What The Fuck</h1>
+                    <h1><%= article.title %></h1>
                     <h2>
-                        <small>16 Jan 2015<br>by</small> Marco Pegoraro
+                        <small><%= article.date %><br>by</small> <%= article.author %>
                     </h2>
                 </header>
                 

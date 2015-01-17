@@ -1,21 +1,4 @@
-<%
-/*
-ARTICLE ITEM TEMPLATE
-receives the article's details as params.article encoded in JSON+BASE64
-
-var article = {
-	title: '',
-	subtitle: '',
-	author: '',
-	date: '',
-	url: '',
-	metaTitle: ''
-};
-*/
-
-var article = JSON.parse(new Buffer(this.params.article, 'base64').toString('ascii'));
-%>
-
+<% var article = this.require('./app/articles/' + this.params.article + '.json'); %>
 <article class="article-item">
 	<header>
 		<a href="/articles/<%= article.url %>.html" title="<%= article.metaTitle %>">
