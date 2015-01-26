@@ -534,5 +534,15 @@ section {
     transform: scale(1) translate(0px, 0px);
   }
 }
+.rounded-img {
+  text-align: center;
+}
+.rounded-img > img {
+  width: 160px;
+  height: auto;
+  margin: 0 auto 2em;
+  border-radius: 100%;
+  box-shadow: 3px 3px 5px #666;
+}
 
 /*# sourceMappingURL=index.css.map */
