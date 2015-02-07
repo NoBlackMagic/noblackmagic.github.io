@@ -534,6 +534,18 @@ section {
     transform: scale(1) translate(0px, 0px);
   }
 }
+.squared-img {
+  text-align: center;
+}
+.squared-img > img {
+  width: 160px;
+  height: auto;
+  margin: 0 auto 2em;
+  box-shadow: 3px 3px 5px #666;
+}
+.squared-img.borderless > img {
+  box-shadow: none;
+}
 .rounded-img {
   text-align: center;
 }
@@ -543,6 +555,9 @@ section {
   margin: 0 auto 2em;
   border-radius: 100%;
   box-shadow: 3px 3px 5px #666;
+}
+.rounded-img.borderless > img {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=index.css.map */
