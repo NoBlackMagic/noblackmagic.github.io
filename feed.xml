@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NoBlackMagic.com</title>
+    <description>Personal blog about my professional experience as web passionate guy.</description>
+    <link>http://NoBlackMagic.com/</link>
+    <atom:link href="http://NoBlackMagic.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 10 Feb 2016 07:20:25 +0100</pubDate>
+    <lastBuildDate>Wed, 10 Feb 2016 07:20:25 +0100</lastBuildDate>
+    <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>The Holy Grail of Code Sharing</title>
+        <description>&lt;p&gt;Code sharing is a concept which is whispered in low tone around the office, is being shouted loud by tools producers and is simply misunderstood by the great part of us, IT folks.&lt;/p&gt;
+
+&lt;p&gt;Management people wish every single line of code to be shared and 100% reusable, they see only one single fact: &lt;em&gt;less code means less costs&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Product Owners and Scrum Masters have big troubles in understanding why to put time in code sharing practices, their way of thinking is: &lt;em&gt;better done than perfect&lt;/em&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Developers… where do I start?&lt;br /&gt;
+Oh yes, all we want is just to code and create amazing apps!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is the story about how &lt;strong&gt;my team faced the challenge to improve code sharing&lt;/strong&gt; among the company with the great objective to improve code quality, reduce time to market and create happier developers.&lt;/p&gt;
+
+&lt;h2 id=&quot;our-problem&quot;&gt;Our Problem&lt;/h2&gt;
+
+&lt;p&gt;I work in a service company whose core business is mobile web applications development.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We sell development time to customers who &lt;strong&gt;know what, but not how to&lt;/strong&gt; do business with mobile devices.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We are more than 100 programmers divided into teams of 6 to 10 guys. Each group is highly committed to it’s project and suffer under high time pressure to fulfill our different customers expectations.&lt;/p&gt;
+
+&lt;p&gt;The projects around the company are not that different, we do tailored based customisations of a shared service, much like a classic web agency producing custom websites.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Today there is &lt;strong&gt;close to zero code sharing&lt;/strong&gt; around our teams and this fact costs us
+a lot of money.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/articles/old-clock.jpg&quot; class=&quot;img-circle center-block post-img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We are a service company and &lt;strong&gt;our trading value is our delopers time&lt;/strong&gt;.&lt;br /&gt;
+When two teams solve the same problem in two different ways, they spend the double of the time.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;And when you sell services, the rule of thumb is fairly easy:&lt;br /&gt;
+&lt;strong&gt;“the double the time the half the revenue”&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To share code across teams appear to be the obvious and easy solution to our problem, but &lt;strong&gt;it turned out that its not easy&lt;/strong&gt; to really implement this in a proper way.&lt;/p&gt;
+
+&lt;h2 id=&quot;our-struggle&quot;&gt;Our Struggle&lt;/h2&gt;
+
+&lt;p&gt;Our product is a quite complex mobile web application so we proposed &lt;strong&gt;to split the requirements into smaller chunks&lt;/strong&gt; that could be reusable and customisable by many teams.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We called those chunks &lt;em&gt;Features&lt;/em&gt; and for the purpose of this article you can think to features as &lt;em&gt;Login&lt;/em&gt;, &lt;em&gt;Payment&lt;/em&gt;, &lt;em&gt;Articles&lt;/em&gt;, …&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A &lt;em&gt;Feature&lt;/em&gt; is a quite big part of the entire application that &lt;strong&gt;implements a single responsibility&lt;/strong&gt; like loggin-in users or enabling payments, etc. It’s smaller compared to the whole application but still it is a unfairly large piece of cake.&lt;/p&gt;
+
+&lt;p&gt;After some hard thinking we came up with a good understanding of the &lt;em&gt;Features&lt;/em&gt; that were involved in our apps and we were extremely happy and proud when &lt;strong&gt;we proposed the company to reorganize our developers into &lt;em&gt;Feature Teams&lt;/em&gt;&lt;/strong&gt; whose task is to implement a specific &lt;em&gt;Feature&lt;/em&gt; to be reausable by others.&lt;/p&gt;
+
+&lt;p&gt;This solution &lt;strong&gt;was hard to hear and accept by management&lt;/strong&gt; because it involved dramatic changes to the company’s structure and business model.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Feature Teams&lt;/em&gt; was just a dead end.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Our second approach was driven by the hard boundary to &lt;strong&gt;not change the company structure&lt;/strong&gt;.&lt;br /&gt;
+&lt;small&gt;(We learned this lesson the hard way)&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/articles/struggle.jpg&quot; class=&quot;img-circle center-block post-img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Long story short, we proposed to let our teams do their job and to create a side team of experts whose duty is to &lt;strong&gt;take existing custom code and &lt;em&gt;change it to make it reusable&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Also this time we became the target for jokes and laughter due to the concept of making things “&lt;em&gt;more reusable&lt;/em&gt;”. What does it mean? I still don’t know.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The third time you try, you are more likely to succeed.&lt;br /&gt;
+&lt;small&gt;If you are humble enough to learn from your mistakes.&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;our-solution&quot;&gt;Our Solution&lt;/h2&gt;
+
+&lt;p&gt;Our final and most successful approach was to discard &lt;em&gt;high academic thinkings&lt;/em&gt; and to go straight down to the core of our daily job.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;we do not just write code,&lt;br /&gt;
+&lt;strong&gt;we do solve problems with code!&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So, instead of limit ourself to the struggle of code-sharing, we moved on and began to &lt;strong&gt;analyse where we were wasting time&lt;/strong&gt; within the company.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The most time expensive moment in every developer’s day is called &lt;strong&gt;&lt;em&gt;WTF&lt;/em&gt;&lt;/strong&gt;.&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;(What The Fuck)&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;small&gt;This is not a bad or impolite expression. This is the technical name for the worst nightmare every man or woman, involved in the process of solving problems with code, has.&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Our &lt;strong&gt;first action point&lt;/strong&gt; was to put small and cross-team groups of developers into a room on a weekly basis with the only objective &lt;strong&gt;to share &lt;em&gt;WTF&lt;/em&gt; stories&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;To tell to your mates &lt;strong&gt;were you had issues and how you solved those&lt;/strong&gt; is not only about the code you wrote. It is all about the tools you used:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;search engines queries&lt;/li&gt;
+  &lt;li&gt;articles, books, blogs &amp;amp; forums&lt;/li&gt;
+  &lt;li&gt;colleagues that knew that s***&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The second action point was to &lt;strong&gt;raise the culture of enterprise code writing&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Enterprise Code Writing&lt;/em&gt; is nothing more than a small group of best practices that we can use when it comes to write code involving 130 people. Some of these are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;single responsibility principle&lt;/li&gt;
+  &lt;li&gt;open source first&lt;/li&gt;
+  &lt;li&gt;readability first&lt;/li&gt;
+  &lt;li&gt;why » how » code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This bullet list might just sound like a bunch of cliché expressions, but I have to use them in this article and actually each of them is worth their own entire book.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The general principle that should drive each of us is:&lt;br /&gt;
+&lt;strong&gt;Don’t do bullshit!&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/articles/no-bullshit.jpg&quot; class=&quot;img-circle center-block post-img&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;to build a big module is way more expensive than to build small ones that can work together&lt;/li&gt;
+  &lt;li&gt;to write my own DOM library is way more time consuming compared to use a jQuery custom build&lt;/li&gt;
+  &lt;li&gt;to write my own knowledge base about Javascript is just not the way, I can search, read and link valuable articles that are already available online&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All &lt;strong&gt;those examples are surprisingly difficult to achieve&lt;/strong&gt; when it comes to developers, 
+the most proud and stubborn people of the planet!&lt;br /&gt;
+&lt;small&gt;(and as matter of fact I am proud to be one of them!)&lt;/small&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;our-path&quot;&gt;Our Path&lt;/h2&gt;
+
+&lt;p&gt;When it comes to practical coding we have a simple action point which is &lt;strong&gt;micro coding&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;We left the idea of coding complete and reusable &lt;em&gt;Features&lt;/em&gt; way behind us. Today we focus in &lt;strong&gt;writing the least amount of code possible&lt;/strong&gt; for the smallest possible of the responsibilities. And we share that.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Each function, source file or module must solve one single problem, no more than one.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;By just doing that our developers have began to &lt;strong&gt;produce reusable code from the very first day of the change&lt;/strong&gt;, without introducing any new tool in their chain.&lt;/p&gt;
+
+&lt;p&gt;At the beginning we used a simple &lt;a href=&quot;https://www.dropbox.com&quot;&gt;DropBox shared folder&lt;/a&gt; to share our micro libraries, 
+today we have evolved a bit by introduceing our second action point.&lt;/p&gt;
+
+&lt;p&gt;Our second practical action point is &lt;strong&gt;Open Source First&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If the solutions exists among the Open Source community we use it,&lt;br /&gt;
+if we create our own solution, we publish it back for others to use.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Today we use &lt;a href=&quot;http://wiki.commonjs.org/wiki/CommonJS&quot;&gt;CommonJS&lt;/a&gt; and &lt;a href=&quot;http://npmjs.org/&quot;&gt;NPM&lt;/a&gt; to write our Javascript, if we need a 
+library we search &lt;em&gt;NPM&lt;/em&gt; or &lt;em&gt;GitHub&lt;/em&gt;, if it exists we use it, if it exists on &lt;em&gt;GitHub&lt;/em&gt; but it is not available through &lt;em&gt;NPM&lt;/em&gt; we contribute to the project to fix it, then we use it through &lt;em&gt;NPM&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;This behaviour is much more than to merely &lt;em&gt;give back to the community&lt;/em&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;By actively publish open source code &lt;strong&gt;we get free help from the community&lt;/strong&gt; that
+contributes to our repositories by doing bug-traking, bug-fixing and code enhancement.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For writing CSS we embrace the &lt;a href=&quot;http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/&quot;&gt;Object Oriented CSS&lt;/a&gt; 
+and we use &lt;a href=&quot;http://lesscss.org/&quot;&gt;LessCss&lt;/a&gt; to build them, to easily do cross-browser compatibility we have chosen 
+&lt;a href=&quot;http://lesshat.madebysource.com/&quot;&gt;LessHat&lt;/a&gt; which is quite simple 
+and complete.&lt;/p&gt;
+
+&lt;p&gt;The third and most important action point was to &lt;strong&gt;challenge our developers&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;There is nothing better than prizes to &lt;strong&gt;light up your willing of doing&lt;/strong&gt;!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So we introduced &lt;strong&gt;cross team challenges&lt;/strong&gt;: groups of 3-4 people from different teams who were competing to produce some fun apps or little games.&lt;/p&gt;
+
+&lt;p&gt;The prize was always quite impressive and at the very beginning some managers had an heart attack about that.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We have a play-room so we created a &lt;em&gt;ChallengeME&lt;/em&gt; app to invite a colleague to the 
+table tennis, we do afterwork so we suggested a &lt;em&gt;PubRating&lt;/em&gt; app internal 
+to the company… and much more!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Eventually the learning effort that every developer put into &lt;strong&gt;the challenge was affecting the quality of his daily job&lt;/strong&gt; so much that no money could have ever bought this accomplishment!&lt;/p&gt;
+
+&lt;p&gt;The best of it is that &lt;strong&gt;we exploited the proudness and stubbornness&lt;/strong&gt; which is natural in each developer to play a fundamental and positive role within the company:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;When a developer learn a better implementation he can not accept to see legacy code 
+anymore so &lt;strong&gt;he/she coach other colleagues to improve&lt;/strong&gt;. For free!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;dont-forget-your-take-away&quot;&gt;Don’t forget your Take Away!&lt;/h2&gt;
+
+&lt;p&gt;Today my company is a better place to work and the quality of what we produce has increased greatly. We have really made some great accomplishments regarding code sharing and reusability.&lt;/p&gt;
+
+&lt;p&gt;We’re also planning to move more into a product business model, something we can do today because we now have the culture of enterprise coding and reusability built into every single one of our developers.&lt;/p&gt;
+
+&lt;p&gt;During the last year a great guy left the company because his &lt;strong&gt;improvements were public on &lt;em&gt;GitHub&lt;/em&gt;&lt;/strong&gt; and he was head hunted by one of our direct competitors.&lt;/p&gt;
+
+&lt;p&gt;This is good, he will learn even more from them but he can not stop to hang out with us, his old mates, we have become real friends through this experience, so &lt;strong&gt;all of the knowledge is coming back to us&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We started this experience more than one year ago, we faced a problem, 
+we spiked some dead ends but eventually we made it. It took some time but it was worth it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What we have learned is that &lt;strong&gt;code sharing is not about tools, but about culture&lt;/strong&gt;, is about people and knowledge, is about sharing the objective to spare some time from our daily struggles and to use it in a more fun and proficient manor.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Feb 2015 10:16:56 +0100</pubDate>
+        <link>http://NoBlackMagic.com/2015/02/10/holy-grail-of-code-sharing.html</link>
+        <guid isPermaLink="true">http://NoBlackMagic.com/2015/02/10/holy-grail-of-code-sharing.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Sleep tight and have an happy Life!</title>
+        <description>&lt;p&gt;Backups are strange animals. In a perfect world you don’t need backups. You put efforts in building a solid backup strategy, you buy external drives, cloud storage and amazing software which you wish you never have to use in life.&lt;/p&gt;
+
+&lt;p&gt;So what? Why am I wasting all those efforts? Why do I live with a tera drive always plugged in my computer? Will a terabyte be enough by the way?&lt;/p&gt;
+
+&lt;p&gt;And when something really bad happens, when you see the bloody blue screen on a Windows machine, when your kids feed your powerless Mac with hot milk, what do you do? &lt;strong&gt;Do you remember how the restore procedure works?&lt;/strong&gt; It never works, not for me at least.&lt;/p&gt;
+
+&lt;p&gt;But today is your lucky day because I am going to tell you that useful and dead simple backup strategies exist. And they are just few clicks away.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The quick takeaway is to &lt;strong&gt;isolate the problem which shows up more often and solve it&lt;/strong&gt; in 
+the simplest and most efficient way.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now try to be honest when you answer the following questions: How many times has a villain stolen your computer? How many times have you gotten destructive viruses? How many times have you screwed your code base because you have kept coding through out the night when you should have gotten some well deserved sleep?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/articles/steal-computer.jpg&quot; alt=&quot;steal-computer&quot; class=&quot;img-circle center-block post-img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For me is the “screwed code” scenario that is responsible for my worse headaches&lt;/strong&gt;. It happens to me as I enter this mystical mental space in which “I see the light”. I feel the urge to give life to my bright ideas so I start scrambling the existing code base here and there. Oh some times I get things done but it is a matter of luck. 8 times out of 10 it doesn’t work at all, and often I can’t go back to where I’ve started!&lt;/p&gt;
+
+&lt;p&gt;The (urgent) &lt;strong&gt;need to get back to a stable code base&lt;/strong&gt; is a daily scenario in the life of a developer. Indeed, it could happen more than once a day, if it was “one of those days”.&lt;/p&gt;
+
+&lt;p&gt;So there is Git. Well, yes but no. Of course Git is one of the most powerful tools at your disposal but it is not the easiest one. You should invest the time of learning Git as version control and collaboration tool, but for now let’s keep things simple. Dead simple.&lt;/p&gt;
+
+&lt;p&gt;The most efficient way to enable a &lt;em&gt;restore-ability&lt;/em&gt; for your code base is to &lt;strong&gt;create a copy of the project before you start&lt;/strong&gt; a development session. On a Mac is just a matter of right clicking the project’s folder and choose “duplicate”. Dead simple.&lt;/p&gt;
+
+&lt;p&gt;What is simple often works well, so let’s analyze what you do to revert your code. You trash the current project’s folder and rename the copy to match the original one. Dead simple and impressively quick.&lt;/p&gt;
+
+&lt;p&gt;Now you can improve your backup strategy by &lt;strong&gt;adding versioning support&lt;/strong&gt;. You are going to keep a copy for each stable version of your code base. Right-click on your project’s folder and choose “compress archive”. This option is available with a slightly different name on different platforms but you have it for sure.&lt;/p&gt;
+
+&lt;p&gt;Every time you create a new archive the OS will &lt;strong&gt;automatically append a version number&lt;/strong&gt; to it. You don’t have to bother and you can access your backup’s date &amp;amp; time informations on the archive’s details panel. If you want to go even further my suggestion for you is to rename the archive, prefixing it with the current time in a “YYMMDDHHMM” format. Now the version number contains the time of the backups and &lt;strong&gt;all your archives are alphabetically sorted&lt;/strong&gt; on your file manager view.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/articles/schedule-backups.jpg&quot; class=&quot;img-circle center-block post-img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course there is a price to pay for this simplicity. It’s space. You are going to need a lot of space if you version your project often. Luckily external drives are cheap nowadays and even cloud storage is not that expensive.&lt;/p&gt;
+
+&lt;p&gt;You can create your versions into your Dropbox folder so they are cloud stored right away and when you reach home at the end of the day you move the old ones to your gigantic external drive for a permanent storage.&lt;/p&gt;
+
+&lt;p&gt;So what about automation? Well so far we considered only manual backup and versioning strategies that you can trigger very quickly, but of course &lt;strong&gt;you want to schedule your backups&lt;/strong&gt; to run under the hood.&lt;/p&gt;
+
+&lt;p&gt;The easiest possible solution is Mac’s &lt;em&gt;Time Machine&lt;/em&gt; which will backup all your computer every hour by default. You can trigger a manual backup by choosing “backup now” on the incon tray’s menu. Some advantages are: a computer wide backup, the restore helper UI and the native support which is shipped within every Mac. The main drawback is that you need to live with your gigantic external drive always plugged in. And if you are not a Mac user then there is no drawback, there is a problem. TimeMachine is available only for Mac, but I am sure there are likewise solutions for both Windows and Linux. (If you know one please post it as a comment and I will integrate it.)&lt;/p&gt;
+
+&lt;p&gt;Another great backup tool is &lt;a href=&quot;https://bombich.com/&quot;&gt;&lt;em&gt;Carbon Copy Cloner&lt;/em&gt;&lt;/a&gt;, another Mac tool. &lt;strong&gt;&lt;em&gt;CCC&lt;/em&gt; creates a bootable clone of your machine&lt;/strong&gt; and you can schedule this backup the way you like it. I use &lt;em&gt;CCC&lt;/em&gt; as disaster recovery strategy. I clone my Mac at least once a week so if I loose it, someone steal it or my dog plays with it, I can buy a new one and clone it back. &lt;strong&gt;In few hours I can be back on track even in a disastrous scenario&lt;/strong&gt;. This is also a good strategy when I simply upgrade my computer to a new one. It’s almost 8 years I’ve been doing this and I never have a problem with it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/articles/external-drive.jpg&quot; class=&quot;img-circle center-block post-img&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;For you that want to play a little bit with some scripting my suggestion is 
+to buy a cheap hosting service which provides an FTP access. With this tool and 
+some bash code you may be able to automate the archive &amp;amp; versioning of your projects 
+adding also a remote upload feature.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In fact &lt;strong&gt;to backup on an external drive is far from enough to secure your data&lt;/strong&gt;. External drives are getting cheaper and cheaper and that means that they are also more prone to failure. Will you be happy to pay hundreds of dollars to extract your photo archive from a ruined disk? I bet you won’t!&lt;/p&gt;
+
+&lt;p&gt;The trick, again, is as easy as redounding your backups on more than one drive.&lt;/p&gt;
+
+&lt;p&gt;I keep my &lt;em&gt;Carbon Copy Cloner&lt;/em&gt; disk at home and the &lt;em&gt;TimeMachine&lt;/em&gt; one at the office. &lt;strong&gt;I backup my important files in two drives that are geographically as far away from each other&lt;/strong&gt;. My data will survive me coding drunk, a robbery, a fire and even an heartquake! With this strategy in place I do sleep tight.&lt;/p&gt;
+
+&lt;h3 id=&quot;remember-the-takeaway&quot;&gt;Remember the Takeaway:&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;think simple&lt;/li&gt;
+  &lt;li&gt;make a copy of your project before you start coding&lt;/li&gt;
+  &lt;li&gt;use cloud tools like &lt;a href=&quot;https://www.dropbox.com/&quot;&gt;Dropbox&lt;/a&gt; or &lt;a href=&quot;https://www.google.com/drive/&quot;&gt;Google Drive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;spread your backups to more disks, give one disk to your mom&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Sleep tight and live a happy Life!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 16 Jan 2015 10:16:56 +0100</pubDate>
+        <link>http://NoBlackMagic.com/2015/01/16/free-backup-strategies-to-sleep-better.html</link>
+        <guid isPermaLink="true">http://NoBlackMagic.com/2015/01/16/free-backup-strategies-to-sleep-better.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>You&#39;d better Test to save some Rest</title>
+        <description>&lt;p&gt;Since the day I became a developer, I’ve always feared the &lt;em&gt;Big What The Fuck&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;BWTF&lt;/em&gt; is not only related to the code you write, it is the lack of knowledge that threatens to crush your entire project. It can be as simple as a server misconfiguration that causes a gaping security flaw.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/articles/dude-wtf.jpg&quot; alt=&quot;dude wtf?&quot; class=&quot;img-circle center-block post-img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When the &lt;em&gt;BWTF&lt;/em&gt; strike, there is nowhere to go; there is no place to hide. The &lt;em&gt;BWTF&lt;/em&gt; is like the worst earthquake in the world: no building endures. A big part of your application, job and/or reputation goes to waste. And nobody wants this to happen.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;How can you protect yourself from the &lt;em&gt;Big What The Fuck&lt;/em&gt;?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Well, the first step is to accept that this risk exists. The next step is to conceive a strategy to mitigate that risk. After more than 10 years striving to avoid the &lt;em&gt;BWTF&lt;/em&gt; I am now quite sure there is no way to remove that risk from your life. It is part of your life.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The best strategy to mitigate the risk of a &lt;em&gt;Big What The Fuck&lt;/em&gt; is &lt;strong&gt;Testing&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I am not constraining the discussion to the source code. You should consider testing to be a strategy for a better life, with or without code. A strategy that you can use to fight the &lt;em&gt;BWTF&lt;/em&gt;. Which is always lurking behind every corner, always present.&lt;/p&gt;
+
+&lt;p&gt;Say you plan to go holiday to the Red Sea, let’s try to work out a test to stress that decision:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;will I relax enough?&lt;/li&gt;
+  &lt;li&gt;will I cope with 6 days without my Mac?&lt;/li&gt;
+  &lt;li&gt;will it be safe?&lt;/li&gt;
+  &lt;li&gt;will I gain 4 pounds by eating all the time?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You do the same activity when coding a procedure that takes 2 integers and return the sum:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;is &lt;code class=&quot;highlighter-rouge&quot;&gt;sum(1, 1)&lt;/code&gt; equal to &lt;code class=&quot;highlighter-rouge&quot;&gt;2&lt;/code&gt;?&lt;/li&gt;
+  &lt;li&gt;does &lt;code class=&quot;highlighter-rouge&quot;&gt;sum(&#39;a&#39;, 2)&lt;/code&gt; throw an exception?&lt;/li&gt;
+  &lt;li&gt;is &lt;code class=&quot;highlighter-rouge&quot;&gt;sum(&#39;a&#39;, 2)&lt;/code&gt; exception a &lt;code class=&quot;highlighter-rouge&quot;&gt;wrongInputType&lt;/code&gt; exception?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The more tests that you are able to produce against a decision / procedure, the bigger 
+chance you have to find early issues, with less of a risk of a &lt;em&gt;Big What The Fuck&lt;/em&gt; 
+in the future.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;When it comes to a code scenario the most likely &lt;em&gt;BWTF&lt;/em&gt; is to forget to consider a minor requirement from the customer. Then you deliver a product that will fail in the future when that minor requirement will manifest. Your phone will ring like crazy, your inbox will choke and you’ll move abroad to escape your shame.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The &lt;em&gt;BWTF&lt;/em&gt; is due to the unpredictability of when the problem will arise.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/articles/unpredictability.jpg&quot; alt=&quot;life is unpredictable&quot; class=&quot;img-circle center-block post-img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The later it shows up, the less you’ll recall what the minor requirement was and where the problem lies within the code base. And how the hell it works! By the time an issue like that manifests itself, you may have moved to another technology.&lt;/p&gt;
+
+&lt;p&gt;In real life a &lt;em&gt;Big What The Fuck&lt;/em&gt; can be even worse. Almost four years ago I bought a brand new house and I took a loan for it. Less than two years later I moved to Sweden to join a challenging job opportunity. To this date I still haven’t sold that house, but I’m still paying the mortgage. Of course this is not a life threatening issue, but I can assure you it is annoying to throw away money like that. What if I had prepared myself with a more accurate test when I decided to buy the house?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;are my career opportunities well developed close to the house?&lt;/li&gt;
+  &lt;li&gt;does my career ask me to be flexible about my location?&lt;/li&gt;
+  &lt;li&gt;will it be possible to sell the house without losing big money on it?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Well, I must confess that I didn’t create any of those tests at the time of the buying.&lt;/p&gt;
+
+&lt;p&gt;As you can see by yourself there is no known ways to completely remove the risk of a &lt;em&gt;Big What The Fuck&lt;/em&gt;. The right way to behave is to mitigate that risk by running every decision / procedure against a &lt;em&gt;good amount of tests&lt;/em&gt;. What the word &lt;em&gt;good&lt;/em&gt; means in this context is up to you, but in general the more the tests the less the risk.&lt;/p&gt;
+
+&lt;p&gt;Another important point is that you can build you tests through time; it is always the right moment to add a new test. This is easier within a coding scenario. You may have missed a minor requirement but as soon you recognise it you can add a specific test to secure that requirement.&lt;/p&gt;
+
+&lt;p&gt;My test suite for real life scenarios is &lt;em&gt;practical common sense&lt;/em&gt; but when it comes to a code scenario I can give some more specific pieces of advice which are specific to &lt;em&gt;Javascript&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/articles/common-sense.jpg&quot; alt=&quot;common sense&quot; class=&quot;img-circle center-block post-img&quot; style=&quot;border: 1px solid #aaa&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://karma-runner.github.io/0.12/index.html&quot;&gt;KarmaJS&lt;/a&gt; is a &lt;a href=&quot;nodejs.org&quot;&gt;NodeJS&lt;/a&gt; command line tool which runs your unit tests. Among its features I should mention that you can run tests on multiple target browsers. You can test mobile devices connected to the same network. I use KarmaJS in combination with &lt;a href=&quot;http://gruntjs.com/&quot;&gt;GruntJS&lt;/a&gt; or &lt;a href=&quot;http://gulpjs.com/&quot;&gt;GulpJS&lt;/a&gt; to integrate tests into my building processes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mochajs.org/&quot;&gt;MochaJS&lt;/a&gt; is a Javascript test framework which helps in creating your specs files. It provides utility methods for a nice code organization of your unit tests.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://chaijs.com/&quot;&gt;ChaiJS&lt;/a&gt; is an &lt;em&gt;assertion library&lt;/em&gt; that works great with Mocha. It allows you to write &lt;code class=&quot;highlighter-rouge&quot;&gt;expect(foo).to.be.a.string&lt;/code&gt; so your assertions comes close to a natural language.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://sinonjs.org/&quot;&gt;SinonJS&lt;/a&gt; is a &lt;em&gt;mocking library&lt;/em&gt; which provides a set of tools to investigate your code. Does this method fire twice? Did it receive a string argument? You can go further and completely mimic an &lt;em&gt;XHR request&lt;/em&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I maintain a simple &lt;em&gt;&lt;a href=&quot;npmjs.org&quot;&gt;NPM module&lt;/a&gt;&lt;/em&gt; which combines the above tools to provide 
+you with a ready to use test suite for Javascript: 
+&lt;a href=&quot;https://www.npmjs.com/package/grunt-mocha-chai-sinon&quot;&gt;grunt-mocha-chai-sinon&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;p&gt;For a more sophisticated tool that brings a building process for &lt;em&gt;single page applications&lt;/em&gt;
+give a try to &lt;a href=&quot;https://github.com/PoliteJS/workspace&quot;&gt;PoliteJS/Workspace&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.webdriver.io/&quot;&gt;WebDriver&lt;/a&gt; is a NodeJS bridge to &lt;a href=&quot;http://www.seleniumhq.org/&quot;&gt;Selenium&lt;/a&gt; functional testing suite. You can build your &lt;em&gt;FAT&lt;/em&gt; in Javascript driving a browsing session with full access to Selenium’s API.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://dalekjs.com/&quot;&gt;DalekJS&lt;/a&gt; is a standalone alternative to &lt;em&gt;WebDriver&lt;/em&gt;. Even if it is on an early stage it looks very promising.&lt;/p&gt;
+
+&lt;h3 id=&quot;so-remember-your-takeaway&quot;&gt;So remember your Takeaway:&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;the &lt;em&gt;Big What The Fuck&lt;/em&gt; is always lurking and there is no way to avoid it&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;testing is the best strategy&lt;/strong&gt; you have to mitigate the risk of a &lt;em&gt;BWTF&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;you can apply testing to your professional and private life
+&lt;!-- /Markdown --&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/articles/succeed.jpg&quot; alt=&quot;success&quot; class=&quot;img-circle center-block post-img&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 15 Jan 2015 10:16:56 +0100</pubDate>
+        <link>http://NoBlackMagic.com/2015/01/15/you-better-test-to-save-some-rest.html</link>
+        <guid isPermaLink="true">http://NoBlackMagic.com/2015/01/15/you-better-test-to-save-some-rest.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>The Curse of the Proud Developer</title>
+        <description>&lt;p&gt;The sky was turning dark when I saw the first &lt;em&gt;Internal Server Error&lt;/em&gt; (code 500). It was 5PM in the winter’s afternoon and we were close to the release deadline. My heart missed at least two beats while my mouse ran to the reload button: “It may be just a network error, I thought”. But it wasn’t.&lt;/p&gt;
+
+&lt;p&gt;That day I was working on an important server side piece of code but now nothing was working anymore. No error messages, no logs. Nothing but a &lt;em&gt;code 505&lt;/em&gt;. I went into panic.&lt;/p&gt;
+
+&lt;p&gt;Around me everyone was packing up to go home and I thought I could not bother them with an error I made on my own code. I was ashamed: “What they’ll think of me? I will loose my credibility as good developer for sure”. That was my fear and the room seemed to close down all around me. I was choking!&lt;/p&gt;
+
+&lt;p&gt;It was the &lt;em&gt;Curse of the Proud Developer&lt;/em&gt; kicking in after a long day of coding.&lt;/p&gt;
+
+&lt;p&gt;So I started to debug my code from scratch. After going through generic checkpoints, I changed my strategy. I moved to a simple but effective line by line comment and test mode. A damn long and frustrating process. The code went blurry before my eyes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/articles/panic.jpg&quot; class=&quot;img-circle center-block post-img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I remember I was almost sweating under the office lights, my sight narrowed down on my keyboard. I was trying to ignore all the happy people around me, hoping for a miracle to happen. And then the miracle did happen.&lt;/p&gt;
+
+&lt;p&gt;“We are going to Paddy’s, will you join us?” It was Johan asking me out to the local pub where we hang out with the team every Friday night. “Ehm, I’m kinda stuck with a damn bug, can’t join right now”, my voice was trembling so much I felt ashamed.&lt;/p&gt;
+
+&lt;p&gt;Johan came to my desk and we got into in a pair programming session to fix the bug. In a few minutes Vladimir and Maximilian also joined us as well. It was the whole team working together to solve a late &lt;em&gt;WTF&lt;/em&gt; before going to the pub to celebrate the past week!&lt;/p&gt;
+
+&lt;p&gt;In the end we found the problem and today nobody recall who was to thank for the bug fix, it was a real team work, and it was successful. We really deserved that beer!&lt;/p&gt;
+
+&lt;p&gt;Since that &lt;em&gt;Black Friday&lt;/em&gt; I faced many other &lt;em&gt;WTF&lt;/em&gt; moments but I’ve never wasted another minute trying to get out of it on my own. What a relief, I neither panic, nor choke anymore.&lt;/p&gt;
+
+&lt;p&gt;My team is here to help me as I’m here to help them and this is how we overcame the &lt;em&gt;Curse of the Proud Developer&lt;/em&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;remember-your-takeaway&quot;&gt;Remember your Takeaway:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;seek for help among your mates&lt;/li&gt;
+  &lt;li&gt;a team play wins over the lonely wolf&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/articles/teamwork.jpg&quot; class=&quot;img-circle center-block post-img&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Jan 2015 10:16:56 +0100</pubDate>
+        <link>http://NoBlackMagic.com/2015/01/13/the-course-of-the-proud-developer.html</link>
+        <guid isPermaLink="true">http://NoBlackMagic.com/2015/01/13/the-course-of-the-proud-developer.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
