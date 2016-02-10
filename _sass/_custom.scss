@@ -1,0 +1,116 @@
+
+.intro {
+    margin: 2em 4em 8em 0;
+    font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    font-style: italic;
+    text-align: center;
+    border-left: 0;
+    color: #666;
+
+    strong {
+        color: #444;
+    }
+}
+
+.post-list {
+
+    > li.post-header {
+        margin-bottom: 4em;
+
+        &:after {
+            display: none;
+        }
+    }
+
+
+    
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .post-subtitle {
+        font: 16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #777777;
+        line-height: 1.3em;
+        margin-top: -0.8em;
+    }
+}
+
+
+.post-header {
+    text-align: center;
+
+    .post-title {
+        font-size: 24px;
+    }
+
+    .post-meta {
+        font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    &:after {
+        content: " ";
+        display: block;
+        width: 60%;
+        margin: auto;
+        border-bottom: 1px dashed #777777;
+        width: 55px;
+        margin: 1.5em auto;
+        border-bottom: 1px solid #777777;
+    }
+}
+
+.post-content {
+    font: 18px/1.8 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+    font-weight: 300;
+
+    blockquote {
+        font: 24px/1.8 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #333;
+    }
+
+    ul {
+        margin-left: 3em;
+    }
+
+    h2 {
+        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
+        margin-top: 2em;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+.squared-img {
+    text-align: center;
+    
+    & > img {
+        width: 160px;
+        height: auto;
+        margin: 0 auto 2em;
+        box-shadow: 3px 3px 5px #666;
+    }
+    
+    &.borderless > img {
+        box-shadow: none;
+    }
+}
+
+.rounded-img {
+    text-align: center;
+    
+    & > img {
+        width: 160px;
+        height: auto;
+        margin: 0 auto 2em;
+        border-radius:100%;
+        box-shadow: 3px 3px 5px #666;
+    }
+    
+    &.borderless > img {
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="home">
+  
+  <div class="intro">
+    
+      <p>When it comes to write code <strong>you don&apos;t need to learn magic spells</strong>.<br>All you need is to <strong>take a look outside the window</strong> and solve your problem<br>with <strong>patterns from the real world</strong>, where you come from.</p>
+      <p><em>-- Then you code --</em></p>
+    
+  </div>
+
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li class="post-header">
+
+      
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            <h1 class="post-title">{{ post.title }}</h1>
+            <h2 class="post-subtitle">{{ post.subtitle }}</h2>
+          </a>
+          <p class="post-meta"><time>{{ post.date | date: "%b %-d, %Y" }}</time>{% if post.author %}<br>by <b>{{ post.author }}</b>{% endif %}</p>
+
+          {% if post.image %}
+          <div class="rounded-img">
+            <img src="{{ site.basepath }}images/articles/{{ post.image }}" style="width:130px; height:130px" />
+          </div>
+          {% endif %}
+          
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

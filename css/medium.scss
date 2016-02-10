@@ -1,0 +1,110 @@
+---
+# Medium like stylesheet
+---
+// $enable-flex: true;
+$font-family-sans-serif: Lato;
+$font-size-root: 20px;
+$line-height: 1.8;
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 720px,
+  xl: 720px
+) !default;
+
+@import "font-lato";
+@import "bootstrap-4.0.0-alpha.2/scss/bootstrap";
+
+.post-img.img-circle {
+    max-width: 200px;
+    margin: 4rem auto;
+}
+
+.post-header {
+    text-align: center;
+
+    h1 {
+        font-size: 1.5rem;
+        color: #000;
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        color: $gray;
+        margin-bottom: 2rem;
+    }
+
+    blockquote {
+        font-size: 0.7rem;
+        line-height: 1;
+        color: $gray;
+        margin-bottom: 2rem;
+    }
+
+    &:after {
+        content: " ";
+        display: block;
+        width: 60%;
+        margin: auto;
+        border-bottom: 1px dashed #777777;
+        width: 55px;
+        margin: 1.5em auto;
+        border-bottom: 1px solid #777777;
+    }
+}
+
+.post-content {
+    
+    h2 {
+        margin-top: 4rem;
+    }
+
+}
+
+.post-list {
+    
+    margin-bottom: 4rem;
+
+    & > h2 {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    &:before {
+        content: " ";
+        display: block;
+        width: 60%;
+        margin: auto;
+        border-bottom: 1px dashed #777777;
+        width: 55px;
+        margin: 4rem auto;
+        border-bottom: 1px solid #777777;
+    }
+
+}
+
+.post-list-item {
+    
+    img {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+
+        h3 {
+            font-size: 1rem;
+        }
+    }
+
+    & > div {
+        font-size: 0.75rem;
+    }
+
+}

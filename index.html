@@ -1,0 +1,23 @@
+---
+layout: medium
+---
+
+<h1 style="margin: 4rem auto;text-align: center">NoBlackMagic.com</h1>
+
+<div class="intro" style="text-align: center">
+    <p>
+        When it comes to write code <strong>you don&apos;t need to learn magic spells</strong>.<br>
+        All you need is to <strong>take a look outside the window</strong> and solve your problem<br>with <strong>patterns from the real world</strong>, where you come from.
+    </p>
+    <p><em>-- Then you code --</em></p>
+</div>
+
+
+<!-- More Articles -->
+<div class="post-list">
+    {% for post in site.posts %}
+        {% if post.url != page.url %}
+            {% include medium-post-item.html %}
+        {% endif %}
+    {% endfor %}
+</div>
