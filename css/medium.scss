@@ -5,6 +5,9 @@
 $font-family-sans-serif: Lato;
 $font-size-root: 20px;
 $line-height: 1.8;
+$border-radius: 0;
+$border-radius-lg: $border-radius;
+$border-radius-sm: $border-radius;
 
 $container-max-widths: (
   sm: 576px,
@@ -40,7 +43,6 @@ $container-max-widths: (
 
     blockquote {
         font-size: 0.7rem;
-        line-height: 1;
         color: $gray;
         margin-bottom: 2rem;
     }
