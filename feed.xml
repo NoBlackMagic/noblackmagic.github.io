@@ -5,9 +5,119 @@
     <description>Personal blog about my professional experience as web passionate guy.</description>
     <link>http://NoBlackMagic.com/</link>
     <atom:link href="http://NoBlackMagic.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Feb 2016 11:51:27 +0100</pubDate>
-    <lastBuildDate>Sun, 14 Feb 2016 11:51:27 +0100</lastBuildDate>
+    <pubDate>Sun, 14 Feb 2016 18:33:27 +0100</pubDate>
+    <lastBuildDate>Sun, 14 Feb 2016 18:33:27 +0100</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Meet REAPP</title>
+        <description>&lt;p&gt;I am dealing with &lt;a href=&quot;https://facebook.github.io/react/&quot; title=&quot;ReactJS&quot;&gt;ReactJS&lt;/a&gt; since one year. I have run through a great deal 
+of &lt;em&gt;WTFs&lt;/em&gt; and teached a good deal of people how to avoid the worst ones.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://github.com/marcopeg/generator-reapp&quot; title=&quot;REAPP Source on GitHub&quot;&gt;REAPP&lt;/a&gt; is an opinionated setup served to you as a Yeoman generator;&lt;br /&gt;
+its goal is to have you working on a ReactJS App in 5 minutes from now.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;embed-video&quot;&gt;
+&lt;iframe width=&quot;480&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/1cwB47-6OJc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;whats-the-problem&quot;&gt;What’s the problem?&lt;/h2&gt;
+
+&lt;p&gt;When it comes to &lt;a href=&quot;https://facebook.github.io/react/&quot; title=&quot;ReactJS&quot;&gt;ReactJS&lt;/a&gt; the most difficult thing to do is &lt;strong&gt;getting it 
+up and running with a simple and efficient setup&lt;/strong&gt;. It’s tough as there is
+so much to know and to learn around this argument:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://facebook.github.io/react/&quot; title=&quot;ReactJS&quot;&gt;ReactJS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;ES5 / JSX / JS6 / &lt;a href=&quot;https://babeljs.io/&quot; title=&quot;ES2015 Transpiler&quot;&gt;Babel&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://webpack.github.io/&quot; title=&quot;Webpack Module Bundler&quot;&gt;webpack&lt;/a&gt; boundling service&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://webpack.github.io/docs/webpack-dev-server.html&quot; title=&quot;Webpack Dev Server&quot;&gt;webpack dev server&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/webpack/docs/wiki/hot-module-replacement-with-webpack&quot; title=&quot;Webpack Hot Module Reload&quot;&gt;hot module reload&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://facebook.github.io/flux/&quot; title=&quot;Flux&quot;&gt;flux&lt;/a&gt; / &lt;a href=&quot;http://redux.js.org/&quot; title=&quot;Redux&quot;&gt;redux&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/reactjs/react-router&quot; title=&quot;React Router&quot;&gt;router&lt;/a&gt; / url state&lt;/li&gt;
+  &lt;li&gt;testing: &lt;a href=&quot;https://karma-runner.github.io&quot; title=&quot;Karma Test Runner&quot;&gt;karma&lt;/a&gt; / &lt;a href=&quot;https://mochajs.org/&quot; title=&quot;MochaJS&quot;&gt;mocha&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;folder structure&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Each of those thing is not a big deal, but when you try to put things together
+you have to face poor documentation, incompatible beta versions and &lt;em&gt;NPM&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-is-reapp-that-good&quot;&gt;Why is REAPP that good?&lt;/h2&gt;
+
+&lt;p&gt;REAPP is an opinionated setup crafted for development speed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you like to write modern &lt;em&gt;ES6&lt;/em&gt;?&lt;/strong&gt;&lt;br /&gt;
+REAPP ships with a complete &lt;a href=&quot;https://babeljs.io/&quot; title=&quot;ES2015 Transpiler&quot;&gt;Babel&lt;/a&gt; configuration for &lt;em&gt;ES6&lt;/em&gt; and &lt;em&gt;ES7&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you like to write &lt;em&gt;SASS&lt;/em&gt; or &lt;em&gt;LESS&lt;/em&gt; when it comes to CSS?&lt;/strong&gt;&lt;br /&gt;
+REAPP let you write modern CSS right out of the box.&lt;br /&gt;
+You choose the language!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you need a router?&lt;/strong&gt;&lt;br /&gt;
+REAPP ships with &lt;a href=&quot;https://github.com/reactjs/react-router&quot; title=&quot;React Router&quot;&gt;React Router&lt;/a&gt;.&lt;br /&gt;
+&lt;small&gt;(but you can also implement your own solution)&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you need to handle your app’s State?&lt;/strong&gt;&lt;br /&gt;
+REAPP ships with &lt;a href=&quot;http://redux.js.org/&quot; title=&quot;Redux&quot;&gt;Redux&lt;/a&gt;.&lt;br /&gt;
+&lt;small&gt;You can easily access &lt;em&gt;Redux Devtools&lt;/em&gt; panel by &lt;code class=&quot;highlighter-rouge&quot;&gt;Cmd+space&lt;/code&gt;.&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you need asynchronous actions?&lt;/strong&gt;&lt;br /&gt;
+REAPP provides you &lt;a href=&quot;http://marcopeg.com/react/react-redux/services.html&quot; title=&quot;Redux Services&quot;&gt;services&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you need hot module reload?&lt;/strong&gt;&lt;br /&gt;
+REAPP provides hot module reload for both Javascript and CSS with no configuration overhead.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you need a lightweight production minified bundle?&lt;/strong&gt;&lt;br /&gt;
+REAPP ships with develompent and production profiles.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you need source maps for both Javascript and CSS?&lt;/strong&gt;&lt;br /&gt;
+REAPP provides source maps to facilitate debugging.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you need to test your software?&lt;/strong&gt;&lt;br /&gt;
+REAPP provides you a &lt;a href=&quot;https://karma-runner.github.io&quot; title=&quot;Karma Test Runner&quot;&gt;KarmaJS&lt;/a&gt; environment which supports ES6 and &lt;em&gt;code coverage&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you need to proxy to your server side APIs?&lt;/strong&gt;&lt;br /&gt;
+REAPP let you configure your api end points in &lt;a href=&quot;https://webpack.github.io/docs/webpack-dev-server.html&quot; title=&quot;Webpack Dev Server&quot;&gt;Webpack Dev Server&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you need to build your own fake APIs locally?&lt;/strong&gt;&lt;br /&gt;
+REAPP ships with a simple &lt;a href=&quot;http://expressjs.com/&quot; title=&quot;ExpressJS&quot;&gt;ExpressJS&lt;/a&gt; setup for this purpose.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-should-you-choose-reapp&quot;&gt;Why should you choose REAPP?&lt;/h2&gt;
+
+&lt;p&gt;Because I did, and you should do the same ;-)&lt;/p&gt;
+
+&lt;p&gt;At the end of the story it just a pre-cooked setup of great open source projects. 
+Nothing more than that. &lt;strong&gt;You just shouldn’t waste time wiring up those
+services&lt;/strong&gt; when the job was already done.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I didn’t reinvent the wheel:&lt;br /&gt;
+I based my work upon other people work!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have been collaborating with different teams in different companies, from
+a small 2 devs startup to a big enterprise. I have faced different challenges
+like the &lt;em&gt;“need for speed”&lt;/em&gt; (in a startup) and long term maintainability.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;REAPP is the outcome of long hours spent doing meetings gathering a large 
+amount of different opinions about “how things should be done”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I think the way you work on a &lt;em&gt;Single Page App&lt;/em&gt; in REAPP is simple and well
+structured to the point to suit the most of your engineering needs.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;And you should use it as well&lt;/strong&gt; :-)&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 14 Feb 2016 00:00:00 +0100</pubDate>
+        <link>http://NoBlackMagic.com/2016/02/14/meet-reapp.html</link>
+        <guid isPermaLink="true">http://NoBlackMagic.com/2016/02/14/meet-reapp.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>The Holy Grail of Code Sharing</title>

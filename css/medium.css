@@ -4719,6 +4719,14 @@ a.bg-danger:focus, a.bg-danger:hover {
   max-width: 200px;
   margin: 4rem auto; }
 
+.embed-video {
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 4rem auto; }
+  .embed-video iframe {
+    box-shadow: 2px 2px 8px #666; }
+
 .post-header {
   text-align: center; }
   .post-header h1 {

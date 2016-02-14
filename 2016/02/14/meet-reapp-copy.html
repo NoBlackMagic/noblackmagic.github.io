@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/css/medium.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <script>
+(function(){
+    // disable GS for development
+    if (document.location.href.indexOf("localhost:") !== -1) {
+        console.log('GA Disabled during Development');
+        return;
+    };
+    // Google Analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    // Analytics Account Data
+    ga('create', 'UA-52991368-1', 'auto');
+    ga('send', 'pageview');
+})();
+</script>
+        <div class="container">
+            <div class="post-header" style="text-align:left;margin-top: 2rem;">
+    <h2 style="margin-bottom:1rem;text-align:center;">NoBlackMagic.com - News</h2>
+    <div class="news-list-item">
+        <div class="row" style="background:#efefef;padding-top:25px;">
+            <div class="col-xs-2 news-date">
+                <time>
+                    <span class="news-month" style="color:#666">February</span>
+                    <span class="news-day">14</span>
+                    <span class="news-year">2016</span>
+                </time>
+            </div>
+            <div class="col-xs-10 news-title">
+                <p>
+                    <h1 style="font-size:1.25rem;font-family:Lato;font-weight:normal;margin-bottom:7px;">Meet REAPP</h1>
+                    
+                    <h2 style="font-size:0.75rem">the fastest way I know to write a ReactJS Single Page App</h2>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post-content">
+    <p>I am dealing with <a href="https://facebook.github.io/react/" title="ReactJS">ReactJS</a> since one year. I have run through a great deal 
+of <em>WTFs</em> and teached a good deal of people how to avoid the worst ones.</p>
+
+<blockquote>
+  <p><a href="https://github.com/marcopeg/generator-reapp" title="REAPP Source on GitHub">REAPP</a> is an opinionated setup served to you as a Yeoman generator;<br />
+its goal is to have you working on a ReactJS App in 5 minutes from now.</p>
+</blockquote>
+
+<div class="embed-video">
+<iframe width="480" height="360" src="https://www.youtube.com/embed/1cwB47-6OJc" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+<h2 id="whats-the-problem">What’s the problem?</h2>
+
+<p>When it comes to <a href="https://facebook.github.io/react/" title="ReactJS">ReactJS</a> the most difficult thing to do is <strong>getting it 
+up and running with a simple and efficient setup</strong>. It’s tough as there is
+so much to know and to learn around this argument:</p>
+
+<ul>
+  <li><a href="https://facebook.github.io/react/" title="ReactJS">ReactJS</a></li>
+  <li>ES5 / JSX / JS6 / <a href="https://babeljs.io/" title="ES2015 Transpiler">Babel</a></li>
+  <li><a href="http://webpack.github.io/" title="Webpack Module Bundler">webpack</a> boundling service</li>
+  <li><a href="https://webpack.github.io/docs/webpack-dev-server.html" title="Webpack Dev Server">webpack dev server</a></li>
+  <li><a href="https://github.com/webpack/docs/wiki/hot-module-replacement-with-webpack" title="Webpack Hot Module Reload">hot module reload</a></li>
+  <li><a href="https://facebook.github.io/flux/" title="Flux">flux</a> / <a href="http://redux.js.org/" title="Redux">redux</a></li>
+  <li><a href="https://github.com/reactjs/react-router" title="React Router">router</a> / url state</li>
+  <li>testing: <a href="https://karma-runner.github.io" title="Karma Test Runner">karma</a> / <a href="https://mochajs.org/" title="MochaJS">mocha</a></li>
+  <li>folder structure</li>
+</ul>
+
+<p>Each of those thing is not a big deal, but when you try to put things together
+you have to face poor documentation, incompatible beta versions and <em>NPM</em>.</p>
+
+<h2 id="why-is-reapp-that-good">Why is REAPP that good?</h2>
+
+<p>REAPP is an opinionated setup crafted for development speed.</p>
+
+<p><strong>Do you like to write modern <em>ES6</em>?</strong><br />
+REAPP ships with a complete <a href="https://babeljs.io/" title="ES2015 Transpiler">Babel</a> configuration for <em>ES6</em> and <em>ES7</em>.</p>
+
+<p><strong>Do you like to write <em>SASS</em> or <em>LESS</em> when it comes to CSS?</strong><br />
+REAPP let you write modern CSS right out of the box.<br />
+You choose the language!</p>
+
+<p><strong>Do you need a router?</strong><br />
+REAPP ships with <a href="https://github.com/reactjs/react-router" title="React Router">React Router</a>.<br />
+<small>(but you can also implement your own solution)</small></p>
+
+<p><strong>Do you need to handle your app’s State?</strong><br />
+REAPP ships with <a href="http://redux.js.org/" title="Redux">Redux</a>.<br />
+<small>You can easily access <em>Redux Devtools</em> panel by <code class="highlighter-rouge">Cmd+space</code>.</small></p>
+
+<p><strong>Do you need asynchronous actions?</strong><br />
+REAPP provides you <a href="http://marcopeg.com/react/react-redux/services.html" title="Redux Services">services</a>.</p>
+
+<p><strong>Do you need hot module reload?</strong><br />
+REAPP provides hot module reload for both Javascript and CSS with no configuration overhead.</p>
+
+<p><strong>Do you need a lightweight production minified bundle?</strong><br />
+REAPP ships with develompent and production profiles.</p>
+
+<p><strong>Do you need source maps for both Javascript and CSS?</strong><br />
+REAPP provides source maps to facilitate debugging.</p>
+
+<p><strong>Do you need to test your software?</strong><br />
+REAPP provides you a <a href="https://karma-runner.github.io" title="Karma Test Runner">KarmaJS</a> environment which supports ES6 and <em>code coverage</em>.</p>
+
+<p><strong>Do you need to proxy to your server side APIs?</strong><br />
+REAPP let you configure your api end points in <a href="https://webpack.github.io/docs/webpack-dev-server.html" title="Webpack Dev Server">Webpack Dev Server</a>.</p>
+
+<p><strong>Do you need to build your own fake APIs locally?</strong><br />
+REAPP ships with a simple <a href="http://expressjs.com/" title="ExpressJS">ExpressJS</a> setup for this purpose.</p>
+
+<h2 id="why-should-you-choose-reapp">Why should you choose REAPP?</h2>
+
+<p>Because I did, and you should do the same ;-)</p>
+
+<p>At the end of the story it just a pre-cooked setup of great open source projects. 
+Nothing more than that. <strong>You just shouldn’t waste time wiring up those
+services</strong> when the job was already done.</p>
+
+<blockquote>
+  <p>I didn’t reinvent the wheel:<br />
+I based my work upon other people work!</p>
+</blockquote>
+
+<p>I have been collaborating with different teams in different companies, from
+a small 2 devs startup to a big enterprise. I have faced different challenges
+like the <em>“need for speed”</em> (in a startup) and long term maintainability.</p>
+
+<blockquote>
+  <p>REAPP is the outcome of long hours spent doing meetings gathering a large 
+amount of different opinions about “how things should be done”.</p>
+</blockquote>
+
+<p>I think the way you work on a <em>Single Page App</em> in REAPP is simple and well
+structured to the point to suit the most of your engineering needs.</p>
+
+<p><strong>And you should use it as well</strong> :-)</p>
+
+
+</div>
+
+<!-- More Articles -->
+<div class="post-list">
+    <h2>Further Readings</h2>
+    
+        
+    
+        
+        
+            <li class="list-group-item news-list-item">
+    <a class="news-link" href="/2016/02/14/meet-reapp.html">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-2 news-date">
+                    <time>
+                        <span class="news-month">February</span>
+                        <span class="news-day">14</span>
+                        <span class="news-year">2016</span>
+                    </time>
+                </div>
+                <div class="col-xs-10 news-title">
+                    <p>
+                        <h5>Meet REAPP</h5>
+                        
+                        the fastest way I know to write a ReactJS Single Page App
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+</li>
+        
+        
+    
+        
+        
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+<a href="/" class="btn btn-secondary-outline btn-lg" style="position:fixed;top:5px;right:5px;color:#444;border:0px solid #444;">
+    X
+</a>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+</html>
