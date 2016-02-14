@@ -24,6 +24,17 @@ $container-max-widths: (
     margin: 4rem auto;
 }
 
+.embed-video {
+    text-align:center;
+    max-width:100%;
+    overflow:hidden; 
+    margin: 4rem auto;
+
+    iframe {
+        box-shadow: 2px 2px 8px #666;
+    }
+}
+
 .post-header {
     text-align: center;
 
