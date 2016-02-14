@@ -4,12 +4,6 @@ layout: medium
 
 <div class="post-header">
 
-    {% if page.image %}
-    <img src="{{ site.basepath }}images/articles/{{ page.image }}"
-         class="img-circle center-block post-img"
-         style="width: 100px; margin: 2rem auto" />
-    {% endif %}
-
     <h1>{{ page.title }}</h1>
     <h2>{{ page.subtitle }}</h2>
 
@@ -27,9 +21,9 @@ layout: medium
 <div class="post-list">
     <h2>Further Readings</h2>
     {% for post in site.posts %}
-        {% if post.layout == 'medium-post' %}
+        {% if post.layout == 'medium-news' %}
         {% if post.url != page.url %}
-            {% include medium-post-item.html %}
+            {% include medium-news-item.html %}
         {% endif %}
         {% endif %}
     {% endfor %}

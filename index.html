@@ -13,11 +13,27 @@ layout: medium
 </div>
 
 
-<!-- More Articles -->
+
 <div class="post-list">
+    <h1>Articles</h1>
     {% for post in site.posts %}
+        {% if post.layout == 'medium-post' %}
         {% if post.url != page.url %}
             {% include medium-post-item.html %}
         {% endif %}
+        {% endif %}
     {% endfor %}
 </div>
+
+<!--
+<h1>News</h1>
+<ul class="list-group news-list">
+    {% for post in site.posts %}
+        {% if post.layout == 'medium-news' %}
+        {% if post.url != page.url %}
+            {% include medium-news-item.html %}
+        {% endif %}
+        {% endif %}
+    {% endfor %}
+</ul>
+-->
